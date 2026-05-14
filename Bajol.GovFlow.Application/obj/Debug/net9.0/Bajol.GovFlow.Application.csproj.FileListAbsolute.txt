@@ -13,3 +13,4 @@ C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\refint\Bajol.GovFlow.Application.dll
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol.GovFlow.Application.pdb
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\ref\Bajol.GovFlow.Application.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol.GovFlow.Application.sourcelink.json

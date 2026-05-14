@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Options;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace Bajol.GovFlow.API.Swagger;
@@ -29,19 +29,13 @@ public sealed class ConfigureSwaggerOptions(IApiVersionDescriptionProvider provi
             Description = "JWT Authorization header using the Bearer scheme."
         });
 
-        options.AddSecurityRequirement(new OpenApiSecurityRequirement
+        options.AddSecurityRequirement(document =>
         {
+            var requirement = new OpenApiSecurityRequirement
             {
-                new OpenApiSecurityScheme
-                {
-                    Reference = new OpenApiReference
-                    {
-                        Type = ReferenceType.SecurityScheme,
-                        Id = "Bearer"
-                    }
-                },
-                Array.Empty<string>()
-            }
+                [new OpenApiSecuritySchemeReference("Bearer", document, externalResource: null)] = []
+            };
+            return requirement;
         });
     }
 }

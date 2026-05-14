@@ -15,3 +15,6 @@ C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Infrastructure\obj\Debug\net9.0\Ba
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Infrastructure\obj\Debug\net9.0\refint\Bajol.GovFlow.Infrastructure.dll
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Infrastructure\obj\Debug\net9.0\Bajol.GovFlow.Infrastructure.pdb
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Infrastructure\obj\Debug\net9.0\ref\Bajol.GovFlow.Infrastructure.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Infrastructure\bin\Debug\net9.0\Bajol.GovFlow.Infrastructure.runtimeconfig.json
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Infrastructure\obj\Debug\net9.0\Bajol.GovFlow.Infrastructure.sourcelink.json
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Infrastructure\obj\Debug\net9.0\Bajol.GovFlow.Infrastructure.genruntimeconfig.cache

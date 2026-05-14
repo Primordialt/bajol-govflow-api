@@ -156,3 +156,8 @@ C:\Users\info\bajol-govflow-api\Bajol.GovFlow.API\obj\Debug\net9.0\Bajol.GovFlow
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.API\obj\Debug\net9.0\ref\Bajol.GovFlow.API.dll
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.API\bin\Debug\net9.0\Elastic.Clients.Elasticsearch.dll
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.API\bin\Debug\net9.0\Elastic.Transport.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.API\obj\Debug\net9.0\Bajol.GovFlow.API.sourcelink.json
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.API\bin\Debug\net9.0\BCrypt-Net-Next.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.API\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.API\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.API\bin\Debug\net9.0\System.Diagnostics.DiagnosticSource.dll

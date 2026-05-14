@@ -9,3 +9,4 @@ C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\Bajol.GovF
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\refint\Bajol.GovFlow.Domain.dll
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\Bajol.GovFlow.Domain.pdb
 C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\ref\Bajol.GovFlow.Domain.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\Bajol.GovFlow.Domain.sourcelink.json
