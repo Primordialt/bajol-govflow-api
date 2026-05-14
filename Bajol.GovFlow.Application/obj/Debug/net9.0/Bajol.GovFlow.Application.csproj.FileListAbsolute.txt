@@ -1,0 +1,15 @@
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol.GovFlow.Application.csproj.AssemblyReference.cache
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol.GovFlow.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol.GovFlow.Application.AssemblyInfoInputs.cache
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol.GovFlow.Application.AssemblyInfo.cs
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol.GovFlow.Application.csproj.CoreCompileInputs.cache
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\bin\Debug\net9.0\Bajol.GovFlow.Application.deps.json
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\bin\Debug\net9.0\Bajol.GovFlow.Application.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\bin\Debug\net9.0\Bajol.GovFlow.Application.pdb
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\bin\Debug\net9.0\Bajol.GovFlow.Domain.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\bin\Debug\net9.0\Bajol.GovFlow.Domain.pdb
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol.Go.7A3B8AB9.Up2Date
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol.GovFlow.Application.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\refint\Bajol.GovFlow.Application.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\Bajol.GovFlow.Application.pdb
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Application\obj\Debug\net9.0\ref\Bajol.GovFlow.Application.dll

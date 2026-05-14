@@ -1,0 +1,11 @@
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\bin\Debug\net9.0\Bajol.GovFlow.Domain.deps.json
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\bin\Debug\net9.0\Bajol.GovFlow.Domain.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\bin\Debug\net9.0\Bajol.GovFlow.Domain.pdb
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\Bajol.GovFlow.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\Bajol.GovFlow.Domain.AssemblyInfoInputs.cache
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\Bajol.GovFlow.Domain.AssemblyInfo.cs
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\Bajol.GovFlow.Domain.csproj.CoreCompileInputs.cache
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\Bajol.GovFlow.Domain.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\refint\Bajol.GovFlow.Domain.dll
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\Bajol.GovFlow.Domain.pdb
+C:\Users\info\bajol-govflow-api\Bajol.GovFlow.Domain\obj\Debug\net9.0\ref\Bajol.GovFlow.Domain.dll

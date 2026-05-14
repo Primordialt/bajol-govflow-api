@@ -1,0 +1,53 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: govflow
+      POSTGRES_PASSWORD: govflow
+      POSTGRES_DB: govflow
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U govflow -d govflow"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.3
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__PostgreSQL: "Host=postgres;Port=5432;Database=govflow;Username=govflow;Password=govflow"
+      ConnectionStrings__Redis: "redis:6379"
+      Jwt__Issuer: "https://govflow.local"
+      Jwt__Audience: "govflow.api"
+      Jwt__SigningKey: "docker-dev-only-symmetric-key-at-least-32-chars!!"
+      Jwt__RequireHttpsMetadata: "false"
+      Elasticsearch__Enabled: "true"
+      Elasticsearch__Uri: "http://elasticsearch:9200"
+      Database__ApplyMigrationsOnStartup: "true"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      elasticsearch:
+        condition: service_started
