@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bajol.GovFlow.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f42b8dc303873182fa7e2b495b55c241910df508")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81e2e961d01637e3f997316969fef3ec81b89f38")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bajol.GovFlow.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bajol.GovFlow.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

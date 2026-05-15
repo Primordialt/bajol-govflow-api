@@ -26,7 +26,7 @@ var app = builder.Build();
 if (builder.Configuration.GetValue("Database:ApplyMigrationsOnStartup", false))
 {
     using var scope = app.Services.CreateScope();
-    var db = scope.ServiceProvider.GetRequiredService<GovFlowDbContext>();
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     await db.Database.MigrateAsync();
 }
 

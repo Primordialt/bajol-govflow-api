@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Bajol.GovFlow.Infrastructure.Persistence.Repositories;
 
-public abstract class RepositoryBase<TEntity, TId>(GovFlowDbContext dbContext) : IRepository<TEntity, TId>
+public abstract class RepositoryBase<TEntity, TId>(AppDbContext dbContext) : IRepository<TEntity, TId>
     where TEntity : Entity<TId>
     where TId : notnull
 {
-    protected readonly GovFlowDbContext DbContext = dbContext;
+    protected readonly AppDbContext DbContext = dbContext;
 
     public virtual async Task<TEntity?> GetByIdAsync(TId id, CancellationToken cancellationToken = default) =>
         await DbContext.Set<TEntity>().FirstOrDefaultAsync(e => e.Id!.Equals(id), cancellationToken);

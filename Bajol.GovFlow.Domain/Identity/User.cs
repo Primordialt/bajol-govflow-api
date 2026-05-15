@@ -68,7 +68,7 @@ public sealed class User : AuditableEntity
         {
             Id = Guid.NewGuid(),
             FullName = fullName,
-            Email = email,
+            Email = UserEmailNormalizer.Normalize(email),
             PhoneNumber = phoneNumber,
             PasswordHash = passwordHash,
             IsActive = true
@@ -156,7 +156,7 @@ public sealed class User : AuditableEntity
     public void UpdateProfile(string fullName, string email, string? phoneNumber, string? updatedBy, DateTime updatedAtUtc)
     {
         FullName = fullName;
-        Email = email;
+        Email = UserEmailNormalizer.Normalize(email);
         PhoneNumber = phoneNumber;
         ApplyUpdatedAudit(updatedBy, updatedAtUtc);
     }

@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
 {
-    [DbContext(typeof(GovFlowDbContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20260514145534_InitialCreate")]
     partial class InitialCreate
     {

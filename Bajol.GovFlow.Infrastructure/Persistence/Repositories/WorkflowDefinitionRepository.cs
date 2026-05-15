@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Bajol.GovFlow.Infrastructure.Persistence.Repositories;
 
-public sealed class WorkflowDefinitionRepository(GovFlowDbContext dbContext) : IWorkflowDefinitionRepository
+public sealed class WorkflowDefinitionRepository(AppDbContext dbContext) : IWorkflowDefinitionRepository
 {
     public async Task<WorkflowDefinition?> GetPublishedAsync(string key, CancellationToken cancellationToken = default) =>
         await dbContext.WorkflowDefinitions

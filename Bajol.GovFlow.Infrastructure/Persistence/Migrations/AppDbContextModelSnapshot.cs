@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
 {
-    [DbContext(typeof(GovFlowDbContext))]
-    partial class GovFlowDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(AppDbContext))]
+    partial class AppDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -97,7 +97,9 @@ namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
                         .HasColumnType("character varying(1024)");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -115,6 +117,7 @@ namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
 
                     b.HasIndex("Code")
                         .IsUnique()
+                        .HasDatabaseName("ux_permissions_code_not_deleted")
                         .HasFilter("\"IsDeleted\" = false");
 
                     b.ToTable("permissions", (string)null);
@@ -146,7 +149,9 @@ namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
                         .HasColumnType("character varying(1024)");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -164,6 +169,7 @@ namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
 
                     b.HasIndex("Name")
                         .IsUnique()
+                        .HasDatabaseName("ux_roles_name_not_deleted")
                         .HasFilter("\"IsDeleted\" = false");
 
                     b.ToTable("roles", (string)null);
@@ -183,10 +189,12 @@ namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PermissionId");
+                    b.HasIndex("PermissionId")
+                        .HasDatabaseName("ix_role_permissions_permission_id");
 
                     b.HasIndex("RoleId", "PermissionId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasDatabaseName("ux_role_permissions_role_id_permission_id");
 
                     b.ToTable("role_permissions", (string)null);
                 });
@@ -223,10 +231,14 @@ namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
                         .HasColumnType("character varying(256)");
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("boolean");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(true);
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(false);
 
                     b.Property<DateTime?>("LastLoginAt")
                         .HasColumnType("timestamp with time zone");
@@ -251,6 +263,7 @@ namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
 
                     b.HasIndex("Email")
                         .IsUnique()
+                        .HasDatabaseName("ux_users_email_not_deleted")
                         .HasFilter("\"IsDeleted\" = false");
 
                     b.ToTable("users", (string)null);
@@ -270,10 +283,12 @@ namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RoleId");
+                    b.HasIndex("RoleId")
+                        .HasDatabaseName("ix_user_roles_role_id");
 
                     b.HasIndex("UserId", "RoleId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasDatabaseName("ux_user_roles_user_id_role_id");
 
                     b.ToTable("user_roles", (string)null);
                 });
@@ -317,13 +332,13 @@ namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
                     b.HasOne("Bajol.GovFlow.Domain.Identity.Permission", "Permission")
                         .WithMany("RolePermissions")
                         .HasForeignKey("PermissionId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Bajol.GovFlow.Domain.Identity.Role", "Role")
                         .WithMany("RolePermissions")
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Permission");
@@ -336,7 +351,7 @@ namespace Bajol.GovFlow.Infrastructure.Persistence.Migrations
                     b.HasOne("Bajol.GovFlow.Domain.Identity.Role", "Role")
                         .WithMany("UserRoles")
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Bajol.GovFlow.Domain.Identity.User", "User")
