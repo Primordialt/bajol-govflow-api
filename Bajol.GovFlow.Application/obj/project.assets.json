@@ -508,14 +508,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\info\\bajol-govflow-api\\Bajol.GovFlow.Application\\Bajol.GovFlow.Application.csproj",
+      "projectUniqueName": "c:\\Users\\info\\bajol-govflow-api\\Bajol.GovFlow.Application\\Bajol.GovFlow.Application.csproj",
       "projectName": "Bajol.GovFlow.Application",
-      "projectPath": "C:\\Users\\info\\bajol-govflow-api\\Bajol.GovFlow.Application\\Bajol.GovFlow.Application.csproj",
+      "projectPath": "c:\\Users\\info\\bajol-govflow-api\\Bajol.GovFlow.Application\\Bajol.GovFlow.Application.csproj",
       "packagesPath": "C:\\Users\\info\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\info\\bajol-govflow-api\\Bajol.GovFlow.Application\\obj\\",
+      "outputPath": "c:\\Users\\info\\bajol-govflow-api\\Bajol.GovFlow.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\info\\bajol-govflow-api\\NuGet.Config",
+        "c:\\Users\\info\\bajol-govflow-api\\NuGet.Config",
         "C:\\Users\\info\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -528,8 +528,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\info\\bajol-govflow-api\\Bajol.GovFlow.Domain\\Bajol.GovFlow.Domain.csproj": {
-              "projectPath": "C:\\Users\\info\\bajol-govflow-api\\Bajol.GovFlow.Domain\\Bajol.GovFlow.Domain.csproj"
+            "c:\\Users\\info\\bajol-govflow-api\\Bajol.GovFlow.Domain\\Bajol.GovFlow.Domain.csproj": {
+              "projectPath": "c:\\Users\\info\\bajol-govflow-api\\Bajol.GovFlow.Domain\\Bajol.GovFlow.Domain.csproj"
             }
           }
         }
